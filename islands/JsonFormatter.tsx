@@ -177,7 +177,7 @@ export default function JsonFormatter({ lang = "de" }: Props) {
         <div className="space-y-2 tds-appear">
           <div className="flex items-center justify-between">
             <span className="status-pill status-pill--success text-sm">{t.valid}</span>
-            <button type="button" className="btn btn-ghost" onClick={copy}>{copied ? t.copied : t.copy}</button>
+            <button type="button" className="btn btn-ghost" onClick={copy} data-copied={copied ? "" : undefined}>{copied ? t.copied : t.copy}</button>
           </div>
           <pre className="tds-card max-h-96 overflow-auto p-3 font-mono text-sm">{result.output}</pre>
         </div>

@@ -62,7 +62,7 @@ const STRINGS = {
     aaaLarge: "AAA (Groß)",
     legend: "„Groß“ = ab 18,66px fett bzw. 24px normal. AA verlangt 4,5:1 (normal) / 3:1 (groß), AAA 7:1 / 4,5:1.",
     sampleHeading: "Beispieltext",
-    sampleBody: "Digitalisierung für Unternehmen — barrierefrei und lesbar für alle. Dieser Vorschautext verwendet die gewählten Farben.",
+    sampleBody: "Digitalisierung für Unternehmen, barrierefrei und lesbar für alle. Dieser Vorschautext verwendet die gewählten Farben.",
     sampleSmall: "Kleinerer Fließtext zur Kontrollprüfung.",
   },
   en: {
@@ -77,7 +77,7 @@ const STRINGS = {
     aaaLarge: "AAA (large)",
     legend: "“Large” = from 18.66px bold or 24px regular. AA requires 4.5:1 (normal) / 3:1 (large), AAA 7:1 / 4.5:1.",
     sampleHeading: "Sample text",
-    sampleBody: "Digitalisation for businesses — accessible and readable for everyone. This preview text uses the colours you selected.",
+    sampleBody: "Digitalisation for businesses, accessible and readable for everyone. This preview text uses the colours you selected.",
     sampleSmall: "Smaller body copy for a second check.",
   },
 } satisfies Record<Lang, Strings>;

@@ -59,7 +59,7 @@ function exampleHtml(r: ResolvedProject, view: PreviewView, cssHref: string | nu
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${r.project.name.replace(/[<>&"]/g, "")} — ${view === "components" ? "Komponenten" : view === "panel" ? "Panel" : "Landingpage"}</title>
+<title>${r.project.name.replace(/[<>&"]/g, "")}: ${view === "components" ? "Komponenten" : view === "panel" ? "Panel" : "Landingpage"}</title>
 ${css}
 <style>
 /* Nur für diese Beispielseite: Layout der Demo, nicht Teil der Komponentenbibliothek. */
@@ -78,7 +78,7 @@ function readme(r: ResolvedProject, included: ExportFormat[], omitted: ExportFor
   const lines = [
     `# ${r.project.name}`,
     "",
-    "Erzeugt mit dem Designsystem-Studio auf tools.tracht-digital.de. Reines HTML und CSS — keine JavaScript-Abhängigkeiten.",
+    "Erzeugt mit dem Designsystem-Studio auf tools.tracht-digital.de. Reines HTML und CSS, keine JavaScript-Abhängigkeiten.",
     "",
     "## Einbinden",
     "",
@@ -125,15 +125,15 @@ function readme(r: ResolvedProject, included: ExportFormat[], omitted: ExportFor
     "",
     "## Barrierefreiheit",
     "",
-    "Das Studio prüft Kontraste, Fokuszustände, Zielgrößen und Bewegung des Designsystems. Eine vollständige WCAG-Konformität der späteren Website kann es nicht garantieren — sie hängt von Inhalt, HTML-Struktur und Umsetzung ab.",
+    "Das Studio prüft Kontraste, Fokuszustände, Zielgrößen und Bewegung des Designsystems. Eine vollständige WCAG-Konformität der späteren Website kann es nicht garantieren, sie hängt von Inhalt, HTML-Struktur und Umsetzung ab.",
     "",
   );
   return lines.join("\n");
 }
 
 const FORMAT_NOTES: Record<ExportFormat, string> = {
-  css: "`css/designsystem.css` — das vollständige Designsystem",
-  variables: "`css/tokens.css` — nur die CSS Custom Properties (alle Themes)",
+  css: "`css/designsystem.css`, das vollständige Designsystem",
+  variables: "`css/tokens.css`, nur die CSS Custom Properties (alle Themes)",
   html: "`examples/*.html` — Beispielseiten (Komponenten, Panel, Landingpage)",
   scss: "`scss/_designsystem.scss` — Sass-Variablen, Theme-Map und Komponenten (Dart Sass, `@use`)",
   json: "`tokens/design-tokens.json` — Design Tokens im DTCG-Format, inklusive Studio-Projekt zum erneuten Öffnen",
@@ -385,7 +385,7 @@ function bootstrapScss(r: ResolvedProject): string {
   const shadowsOn = t.style.shadow !== "none";
   const rem = (px: number) => `${Math.round((px / 16) * 10000) / 10000}rem`;
   const sass = (v: string) => v.replace(/#\{/g, "# {");
-  return `// ${r.project.name.replace(/[\r\n]/g, " ")} — Bootstrap 5.3 Theme-Anpassung
+  return `// ${r.project.name.replace(/[\r\n]/g, " ")}: Bootstrap 5.3 Theme-Anpassung
 // VOR Bootstrap importieren:
 //   @import "bootstrap-overrides";
 //   @import "bootstrap/scss/bootstrap";

@@ -183,7 +183,7 @@ function contrastCheck(
     criterion: opts.text ? "1.4.3 Kontrast (Minimum)" : "1.4.11 Nicht-Text-Kontrast",
     level: "AA",
     required: `${aa}:1`,
-    message: `${subject}: ${opts.property} ${round2(ratio)}:1 — erfüllt AA.`,
+    message: `${subject}: ${opts.property} ${round2(ratio)}:1, erfüllt AA.`,
   });
   if (aaa !== null) {
     const ok = ratio >= aaa;
@@ -281,7 +281,7 @@ function themeChecks(ctx: Ctx, theme: ResolvedTheme) {
     message:
       sd >= 1.4
         ? "Erfolg und Fehler unterscheiden sich auch in der Helligkeit."
-        : "Erfolg (Grün) und Fehler (Rot) unterscheiden sich fast nur im Farbton — für Menschen mit Rot-Grün-Schwäche schwer lesbar. Status immer zusätzlich mit Text oder Symbol kennzeichnen.",
+        : "Erfolg (Grün) und Fehler (Rot) unterscheiden sich fast nur im Farbton, für Menschen mit Rot-Grün-Schwäche schwer lesbar. Status immer zusätzlich mit Text oder Symbol kennzeichnen.",
   });
 }
 
@@ -377,7 +377,7 @@ function globalChecks(ctx: Ctx) {
     property: "Zeilenhöhe",
     actual: String(t.font.lineHeight),
     required: "≥ 1.5 empfohlen",
-    message: t.font.lineHeight >= 1.5 ? "Die Zeilenhöhe unterstützt gute Lesbarkeit." : "Eine Zeilenhöhe unter 1,5 erschwert das Lesen längerer Texte. (1.4.12 verlangt, dass Nutzer sie erhöhen können — das tut das erzeugte CSS nicht verhindern.)",
+    message: t.font.lineHeight >= 1.5 ? "Die Zeilenhöhe unterstützt gute Lesbarkeit." : "Eine Zeilenhöhe unter 1,5 erschwert das Lesen längerer Texte. (1.4.12 verlangt, dass Nutzer sie erhöhen können, das tut das erzeugte CSS nicht verhindern.)",
   });
 
   // Motion.
@@ -448,7 +448,7 @@ function globalChecks(ctx: Ctx) {
 }
 
 const MANUAL: Array<[string, string, Level, string]> = [
-  ["1.1.1 Nicht-Text-Inhalt", "Alternativtexte", "A", "Bilder und Icons brauchen Alternativtexte — das legt die spätere Seite fest, nicht das Designsystem."],
+  ["1.1.1 Nicht-Text-Inhalt", "Alternativtexte", "A", "Bilder und Icons brauchen Alternativtexte, das legt die spätere Seite fest, nicht das Designsystem."],
   ["1.3.1 Info und Beziehungen", "Semantisches HTML", "A", "Überschriften, Listen, Labels (for/id) und Landmarken müssen im HTML korrekt ausgezeichnet sein."],
   ["2.1.1 Tastatur", "Tastaturbedienung", "A", "Alle Funktionen müssen per Tastatur erreichbar sein. Das hängt von HTML und Skripten der Seite ab."],
   ["2.4.3 Fokusreihenfolge", "Reihenfolge", "A", "Die Tab-Reihenfolge ergibt sich aus der Struktur der fertigen Seite."],

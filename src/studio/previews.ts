@@ -67,7 +67,7 @@ const T = {
     quick: "Schnell erfassen",
     heroEyebrow: "Digitale Maßarbeit",
     heroTitle: "Websites, die zu Ihrem Betrieb passen",
-    heroText: "Klar gestaltet, schnell geladen und einfach zu pflegen — für kleine und mittlere Unternehmen.",
+    heroText: "Klar gestaltet, schnell geladen und einfach zu pflegen, für kleine und mittlere Unternehmen.",
     services: "Unsere Leistungen",
     serviceItems: [
       ["Webdesign", "Individuelle Gestaltung, die Ihre Marke trägt."],
@@ -75,7 +75,7 @@ const T = {
       ["Beratung", "Ehrliche Einschätzung, was Ihr Projekt braucht."],
     ],
     contact: "Kontakt aufnehmen",
-    contactText: "Schreiben Sie uns — wir melden uns innerhalb eines Werktags.",
+    contactText: "Schreiben Sie uns, wir melden uns innerhalb eines Werktags.",
     name: "Name",
   },
   en: {
@@ -123,7 +123,7 @@ const T = {
     quick: "Quick entry",
     heroEyebrow: "Made to measure",
     heroTitle: "Websites that fit your business",
-    heroText: "Clearly designed, fast to load and easy to maintain — for small and medium-sized businesses.",
+    heroText: "Clearly designed, fast to load and easy to maintain, for small and medium-sized businesses.",
     services: "Our services",
     serviceItems: [
       ["Web design", "Individual design that carries your brand."],
@@ -131,7 +131,7 @@ const T = {
       ["Consulting", "An honest view of what your project needs."],
     ],
     contact: "Get in touch",
-    contactText: "Write to us — we reply within one working day.",
+    contactText: "Write to us, we reply within one working day.",
     name: "Name",
   },
 } as const;

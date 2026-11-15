@@ -57,7 +57,7 @@ export function A11yStep({
 
   const markdown = () =>
     [
-      `# ${t.a11y.report} — ${resolved.project.name}`,
+      `# ${t.a11y.report}: ${resolved.project.name}`,
       "",
       t.a11y.disclaimer,
       "",
@@ -151,6 +151,7 @@ export function A11yStep({
               type="button"
               className="btn btn-ghost"
               onClick={() => void copy(markdown())}
+              data-copied={copied ? "" : undefined}
             >
               {copied ? t.code.copied : t.a11y.copyReport}
             </button>

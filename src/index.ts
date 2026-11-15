@@ -17,12 +17,12 @@ export default defineToolPack({
       name: "JSON-Formatter & -Validator",
       category: "developer",
       description:
-        "Formatiere, validiere und minimiere JSON. Zeigt Syntaxfehler mit Position an — alles lokal im Browser.",
+        "Formatiere, validiere und minimiere JSON. Zeigt Syntaxfehler mit Position an, alles lokal im Browser.",
       icon: "braces",
       keywords: ["json", "formatter", "validator", "beautify", "minify"],
       component: "@tracht-digital-solutions/tds-tool-devkit/tools/JsonFormatter.astro",
       seo: {
-        title: "JSON-Formatter & -Validator — online, kostenlos",
+        title: "JSON-Formatter & -Validator, online, kostenlos",
         description:
           "Kostenloser JSON-Formatter: einrücken, validieren und minimieren mit Fehleranzeige. Läuft komplett im Browser, keine Anmeldung.",
       },
@@ -38,7 +38,7 @@ export default defineToolPack({
       keywords: ["kontrast", "wcag", "barrierefrei", "accessibility", "farbe"],
       component: "@tracht-digital-solutions/tds-tool-devkit/tools/ContrastChecker.astro",
       seo: {
-        title: "Farb-Kontrast-Checker (WCAG) — Barrierefreiheit prüfen",
+        title: "Farb-Kontrast-Checker (WCAG): Barrierefreiheit prüfen",
         description:
           "Kostenloser WCAG-Kontrast-Checker: prüft das Kontrastverhältnis von Text und Hintergrund gegen AA/AAA. Für barrierefreie Websites.",
       },
@@ -56,7 +56,7 @@ export default defineToolPack({
       // A workspace (settings + live preview) needs the full content width.
       layout: "wide",
       seo: {
-        title: "CSS-Designsystem-Generator — Komponenten visuell gestalten",
+        title: "CSS-Designsystem-Generator: Komponenten visuell gestalten",
         description:
           "Button oder Karte visuell gestalten, daraus ein Designsystem mit Hell- und Dunkelmodus ableiten, Kontraste prüfen und als CSS, SCSS oder Tailwind exportieren.",
         jsonLdType: "WebApplication",

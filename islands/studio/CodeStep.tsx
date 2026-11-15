@@ -59,6 +59,7 @@ function CodeBlock({ code, t, canCopy }: { code: string; t: Strings; canCopy: bo
           className="btn btn-ghost"
           disabled={!canCopy}
           onClick={() => void copy(code)}
+          data-copied={copied ? "" : undefined}
         >
           {copied ? t.code.copied : t.code.copy}
         </button>

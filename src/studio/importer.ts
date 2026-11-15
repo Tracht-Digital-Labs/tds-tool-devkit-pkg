@@ -672,7 +672,7 @@ function seedFrom(kind: SeedKind, c: Cascade, inherited: Decl[], notes: Set<stri
   };
   if (c.focus.length === 0) {
     style.states.focus = { outlineWidth: 2, outlineOffset: 2 };
-    notes.add("Kein eigener Fokuszustand gefunden — ein sichtbarer Fokusrahmen wurde ergänzt.");
+    notes.add("Kein eigener Fokuszustand gefunden, ein sichtbarer Fokusrahmen wurde ergänzt.");
   }
   return style;
 }
@@ -731,7 +731,7 @@ export function importCss(cssText: string, parse: ParseHtml = browserParse): Imp
   }
   if (!style) {
     style = defaultStyle("button");
-    notes.add("Keine Button-, Karten- oder Formularregel gefunden — die Ausgangskomponente wurde aus den Farben und Variablen abgeleitet.");
+    notes.add("Keine Button-, Karten- oder Formularregel gefunden, die Ausgangskomponente wurde aus den Farben und Variablen abgeleitet.");
     const primary = values.find((v) => v.path === "color.primary");
     if (primary) {
       style.background = String(primary.value);
@@ -745,7 +745,7 @@ export function importCss(cssText: string, parse: ParseHtml = browserParse): Imp
   const unmapped: string[] = [];
   for (const node of nodes) {
     if (node.type === "at" && node.name === "import") {
-      notes.add(`@import ${node.prelude} wurde nicht übernommen — bitte am Anfang der eigenen Datei einbinden.`);
+      notes.add(`@import ${node.prelude} wurde nicht übernommen, bitte am Anfang der eigenen Datei einbinden.`);
       continue;
     }
     if (node.type === "rule") {
@@ -948,14 +948,14 @@ export function analyzePage(page: FetchedPage, parse: ParseHtml = browserParse):
     if (inputEl && c && c.matched > 0) {
       seedKind = "input";
       style = seedFrom("input", c, bodyC.base, notes);
-      notes.add("Kein gestalteter Button gefunden — Ausgangspunkt ist das Formularfeld.");
+      notes.add("Kein gestalteter Button gefunden: Ausgangspunkt ist das Formularfeld.");
     } else {
       const primary = values.find((v) => v.path === "color.primary");
       if (primary) {
         style.background = String(primary.value);
         style.borderColor = { top: style.background, right: style.background, bottom: style.background, left: style.background };
       }
-      notes.add("Kein gestalteter Button gefunden — der Button wurde aus den erkannten Farben abgeleitet.");
+      notes.add("Kein gestalteter Button gefunden, der Button wurde aus den erkannten Farben abgeleitet.");
     }
   }
   const brandFromButton = style.background && parseColor(style.background) && isChromatic(style.background);
@@ -987,7 +987,7 @@ export function analyzePage(page: FetchedPage, parse: ParseHtml = browserParse):
         },
   );
   for (const s of page.skipped ?? []) notes.add(`Stylesheet nicht geladen (${s.reason}): ${s.url}`);
-  if (page.stylesheets.length === 0 && inlineCss.length === 0) notes.add("Die Seite liefert kein auswertbares CSS — die meisten Werte sind abgeleitet, nicht gefunden.");
+  if (page.stylesheets.length === 0 && inlineCss.length === 0) notes.add("Die Seite liefert kein auswertbares CSS, die meisten Werte sind abgeleitet, nicht gefunden.");
   notes.add("Schriftarten werden nur namentlich übernommen; Webfonts sind selbst zu lizenzieren und einzubinden.");
 
   const project = finish("url", seedKind, style, values, { url: page.finalUrl ?? page.url }, notes);

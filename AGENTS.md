@@ -32,6 +32,7 @@ npm run lint:primitives         # fails on a control without a shared class
 - The real gate for `islands/` and `tools/` is the `tds-tools-frontend` build, not `type-check` here.
 - `src/studio` ships as raw source (`files`, `exports["./studio/*"]`); the island and the site's export route import it from the tarball.
 - Studio: no AI, no randomness, no guest persistence (no localStorage/IndexedDB). Exports are HTML/CSS only, never JavaScript.
+- Follows the TDS quality standard (`../tds-ops/standards/quality.md`): no AI slop, clean code.
 
 ## Topic files
 

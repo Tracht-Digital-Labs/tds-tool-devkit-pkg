@@ -348,7 +348,7 @@ export function parseCss(src: string): ParseResult {
     if (!prop.startsWith("--")) {
       const lower = prop.toLowerCase();
       if (!KNOWN_PROPERTIES.has(lower) && !/^-(webkit|moz|ms|o)-/.test(lower)) {
-        err(`Unbekannte Eigenschaft „${prop}“ — Tippfehler?`, first.start, "warning");
+        err(`Unbekannte Eigenschaft „${prop}“: Tippfehler?`, first.start, "warning");
       }
     }
     return { type: "decl", prop: prop.startsWith("--") ? prop : prop.toLowerCase(), value, important, start: first.start, end };
