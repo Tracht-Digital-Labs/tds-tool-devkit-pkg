@@ -4,4 +4,4 @@
  * (`./zip`, 0.59) when the image compressor needed the same container; this
  * module keeps the pack's import path.
  */
-export { crc32, createZip, readZip, safeZipPath, type ZipEntry } from "@tracht-digital-solutions/tds-shared/zip";
+export { crc32, createZip, readZip, safeZipPath, type ZipEntry } from "@tracht-digital-labs/tds-shared/zip";

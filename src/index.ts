@@ -1,4 +1,4 @@
-import { defineToolPack, defineTool } from "@tracht-digital-solutions/tds-tools-contract";
+import { defineToolPack, defineTool } from "@tracht-digital-labs/tds-tools-contract";
 
 /**
  * Developer & design utilities: a JSON formatter/validator, a WCAG contrast
@@ -20,7 +20,7 @@ export default defineToolPack({
         "Formatiere, validiere und minimiere JSON. Zeigt Syntaxfehler mit Position an, alles lokal im Browser.",
       icon: "braces",
       keywords: ["json", "formatter", "validator", "beautify", "minify"],
-      component: "@tracht-digital-solutions/tds-tool-devkit/tools/JsonFormatter.astro",
+      component: "@tracht-digital-labs/tds-tool-devkit/tools/JsonFormatter.astro",
       seo: {
         title: "JSON-Formatter & -Validator, online, kostenlos",
         description:
@@ -36,7 +36,7 @@ export default defineToolPack({
         "Prüfe das Kontrastverhältnis zwischen Text- und Hintergrundfarbe gegen die WCAG-AA/AAA-Kriterien für barrierefreie Websites.",
       icon: "contrast",
       keywords: ["kontrast", "wcag", "barrierefrei", "accessibility", "farbe"],
-      component: "@tracht-digital-solutions/tds-tool-devkit/tools/ContrastChecker.astro",
+      component: "@tracht-digital-labs/tds-tool-devkit/tools/ContrastChecker.astro",
       seo: {
         title: "Farb-Kontrast-Checker (WCAG): Barrierefreiheit prüfen",
         description:
@@ -52,7 +52,7 @@ export default defineToolPack({
         "CSS-Komponente visuell gestalten und daraus ein komplettes Designsystem erzeugen: Themes, Barrierefreiheits-Prüfung, Export als CSS, SCSS, Tailwind oder JSON.",
       icon: "palette",
       keywords: ["css generator", "designsystem", "design tokens", "button generator", "theme", "dark mode", "tailwind", "scss", "barrierefreiheit"],
-      component: "@tracht-digital-solutions/tds-tool-devkit/tools/DesignSystemStudio.astro",
+      component: "@tracht-digital-labs/tds-tool-devkit/tools/DesignSystemStudio.astro",
       // A workspace (settings + live preview) needs the full content width.
       layout: "wide",
       seo: {

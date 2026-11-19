@@ -34,7 +34,7 @@ export function Section({ title, children, open = false }: { title: string; chil
 }
 
 /** The single-choice chip row lives in tds-shared (0.59). */
-export { Segmented } from "@tracht-digital-solutions/tds-shared/components";
+export { Segmented } from "@tracht-digital-labs/tds-shared/components";
 
 /** A range slider with a number box beside it; both edit the same value. */
 export function NumberInput({

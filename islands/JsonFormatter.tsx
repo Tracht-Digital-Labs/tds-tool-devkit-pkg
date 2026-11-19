@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Alert } from "@tracht-digital-solutions/tds-shared/alert";
-import { useCopyFlag } from "@tracht-digital-solutions/tds-shared/clipboard";
+import { Alert } from "@tracht-digital-labs/tds-shared/alert";
+import { useCopyFlag } from "@tracht-digital-labs/tds-shared/clipboard";
 
 /** See the tools-site convention: labels are translated, logic is not. */
 type Lang = "de" | "en";

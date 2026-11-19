@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Alert } from "@tracht-digital-solutions/tds-shared/alert";
+import { Alert } from "@tracht-digital-labs/tds-shared/alert";
 
 /** Parse #rgb / #rrggbb into [r,g,b] 0-255, or null if malformed. */
 function parseHex(hex: string): [number, number, number] | null {

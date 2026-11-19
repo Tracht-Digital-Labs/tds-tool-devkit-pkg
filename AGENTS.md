@@ -2,7 +2,7 @@
 
 Tool pack for the public tools platform: JSON formatter, WCAG contrast checker and the
 Designsystem-Studio (visual CSS / design-system generator). It builds against
-`@tracht-digital-solutions/tds-tools-contract` and is composed into `tds-tools-frontend`
+`@tracht-digital-labs/tds-tools-contract` and is composed into `tds-tools-frontend`
 at build time. No runtime dependencies. The first two tools have no network; the studio
 calls `tds-ext-tools-pkg` (access, Premium projects, URL fetch) and the site's
 `/tds/studio/export`.

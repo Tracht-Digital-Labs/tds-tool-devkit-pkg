@@ -16,7 +16,7 @@ import { PreviewFrame } from "./PreviewFrame";
 import { StartStep } from "./StartStep";
 import { STRINGS, type Lang } from "./strings";
 import { SystemStep } from "./SystemStep";
-import { Alert } from "@tracht-digital-solutions/tds-shared/alert";
+import { Alert } from "@tracht-digital-labs/tds-shared/alert";
 
 const STEPS = ["start", "component", "system", "preview", "code", "a11y", "export"] as const;
 type Step = (typeof STEPS)[number];

@@ -6,7 +6,7 @@ import { COMPONENT_KINDS, type ComponentKind } from "../../src/studio/model";
 import type { ResolvedProject } from "../../src/studio/resolve";
 import { Field, SelectInput } from "./controls";
 import type { Strings } from "./strings";
-import { useCopyFlag } from "@tracht-digital-solutions/tds-shared/clipboard";
+import { useCopyFlag } from "@tracht-digital-labs/tds-shared/clipboard";
 
 const COLORS: Partial<Record<Token["type"], string>> = {
   comment: "var(--color-muted)",

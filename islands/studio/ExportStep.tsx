@@ -4,8 +4,8 @@ import { FORMAT_DESCRIPTIONS, FORMAT_LABELS } from "../../src/studio/export/adap
 import { parseProject, type DesignProject } from "../../src/studio/model";
 import { EXPORT_FORMATS, mayExport, type ExportFormat, type StudioAccess } from "../../src/studio/policy";
 import type { Lang, Strings } from "./strings";
-import { downloadBlob } from "@tracht-digital-solutions/tds-shared/download";
-import { Alert } from "@tracht-digital-solutions/tds-shared/alert";
+import { downloadBlob } from "@tracht-digital-labs/tds-shared/download";
+import { Alert } from "@tracht-digital-labs/tds-shared/alert";
 
 export function PremiumBox({ t, lang, access }: { t: Strings; lang: Lang; access: StudioAccess }) {
   const [busy, setBusy] = useState(false);

@@ -1,4 +1,4 @@
-# @tracht-digital-solutions/tds-tool-devkit
+# @tracht-digital-labs/tds-tool-devkit
 
 Developer & design utilities for the **TDS tools platform** (`tds-tools-frontend`). Fully
 client-side.

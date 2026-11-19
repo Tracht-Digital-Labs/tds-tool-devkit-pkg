@@ -3,8 +3,8 @@ import { auditProject, type CheckStatus, type Finding, type Suggestion } from ".
 import type { ResolvedProject } from "../../src/studio/resolve";
 import { Segmented } from "./controls";
 import type { Strings } from "./strings";
-import { useCopyFlag } from "@tracht-digital-solutions/tds-shared/clipboard";
-import { Alert } from "@tracht-digital-solutions/tds-shared/alert";
+import { useCopyFlag } from "@tracht-digital-labs/tds-shared/clipboard";
+import { Alert } from "@tracht-digital-labs/tds-shared/alert";
 
 type Filter = "problems" | "warn" | "pass" | "manual" | "all";
 

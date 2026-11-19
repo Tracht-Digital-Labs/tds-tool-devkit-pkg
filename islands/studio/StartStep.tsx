@@ -9,8 +9,8 @@ import { Field, Segmented } from "./controls";
 import { ChoiceCard } from "./Layout";
 import { PreviewFrame } from "./PreviewFrame";
 import type { Lang, Strings } from "./strings";
-import { FileDropZone } from "@tracht-digital-solutions/tds-shared/dropzone";
-import { Alert } from "@tracht-digital-solutions/tds-shared/alert";
+import { FileDropZone } from "@tracht-digital-labs/tds-shared/dropzone";
+import { Alert } from "@tracht-digital-labs/tds-shared/alert";
 
 type ImportKind = "css" | "html" | "json";
 const MAX_FILE = 1_000_000;
